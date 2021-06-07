@@ -1,0 +1,23 @@
+{
+  "name": "hello-lightstep",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@opentelemetry/core": "^0.20.0",
+    "@opentelemetry/metrics": "^0.20.0",
+    "@opentelemetry/node": "^0.20.0",
+    "@opentelemetry/plugin-express": "^0.15.0",
+    "@opentelemetry/plugin-http": "^0.18.2",
+    "@opentelemetry/plugin-https": "^0.18.2",
+    "@opentelemetry/tracing": "^0.20.0",
+    "express": "^4.17.1",
+    "lightstep-opentelemetry-launcher-node": "^0.16.0",
+    "lightstep-tracer": "^0.31.2-no-protobuf",
+    "ls-trace": "^0.3.5",
+    "nodemon": "^2.0.7"
+  },
+  "scripts": {
+    "start": "bash -ci 'source ./.env; nodemon src/index.js'"
+  }
+}
